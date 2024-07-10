@@ -80,6 +80,9 @@ body {
   padding-block: 2rem;
   font-size: 11px;
   text-align: center;
+
+  position: fixed;
+  bottom: 0;
 }
 
 .attribution__link {
@@ -88,4 +91,10 @@ body {
 
 .attribution__link:hover {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .attribution {
+    display: none;
+  }
 }
