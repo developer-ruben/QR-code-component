@@ -36,6 +36,16 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .qr-code {
   box-shadow: 0 25px 25px 0 hsl(var(--clr-black), 0.0477);
   display: flex;
