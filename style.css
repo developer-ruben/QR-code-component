@@ -1,0 +1,137 @@
+/* FONTS */
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/fonts/Outfit/static/Outfit-Regular.ttf");
+  font-family: "Outfit";
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 700;
+  src: url("./assets/fonts/Outfit/static/Outfit-Bold.ttf");
+  font-family: "Outfit";
+}
+
+/* VARIABLES */
+
+:root {
+  --clr-slate-900: 218, 44%, 22%;
+  --clr-slate-500: 216, 15%, 48%;
+  --clr-slate-300: 212, 45%, 89%;
+  --clr-white: 0, 0%, 100%;
+  --clr-black: 0, 0%, 0%;
+
+  --text-preset-1-size: 2.2rem;
+  --text-preset-1-height: 1.2;
+  --text-preset-2-size: 1.5rem;
+  --text-preset-2-height: 1.4;
+  --text-preset-2-ls: 0.02rem;
+
+  --spacing-500: 4rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+}
+
+/* RESET */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+textarea,
+input,
+button {
+  font: inherit;
+}
+
+/* GENERAL */
+
+body {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--clr-slate-300));
+  padding: 2.75rem;
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+/* UTILITY */
+
+/* QR COMPONENT */
+
+.qr-component {
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 25px 25px 0 hsl(var(--clr-black), 0.0477);
+  border-radius: 2rem;
+  background-color: hsl(var(--clr-white));
+  padding: var(--spacing-200) var(--spacing-200) var(--spacing-500)
+    var(--spacing-200);
+  max-width: 320px;
+  color: hsl(var(--clr-slate-900));
+  text-align: center;
+}
+
+.qr-component:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.qr-component__image {
+  margin-bottom: var(--spacing-300);
+  border-radius: 1rem;
+  height: auto;
+}
+
+.qr-component__title {
+  margin-bottom: var(--spacing-200);
+  font-size: var(--text-preset-1-size);
+  line-height: var(--text-preset-1-height);
+}
+
+.qr-component__text {
+  color: hsl(var(--clr-slate-500));
+  font-size: var(--text-preset-2-size);
+  line-height: var(--text-preset-2-height);
+  letter-spacing: var(--text-preset-2-ls);
+}
+
+/* ATTRIBUTION */
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 0.8rem;
+  background-color: hsl(var(--clr-white));
+  padding: 0.8rem;
+  color: hsl(var(--clr-slate-500));
+}
+
+.attribution__link {
+  color: hsl(var(--clr-slate-900));
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@media (max-width: 855px) {
+  .attribution {
+    display: none;
+  }
+}
