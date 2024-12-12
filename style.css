@@ -99,6 +99,10 @@ body {
   height: auto;
 }
 
+.qr-component__content {
+  padding: 0 var(--spacing-200);
+}
+
 .qr-component__title {
   margin-bottom: var(--spacing-200);
   font-size: var(--text-preset-1-size);
