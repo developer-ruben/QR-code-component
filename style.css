@@ -103,6 +103,7 @@ main {
 }
 
 .card__image {
+  display: block;
   margin-bottom: 2.4rem;
   border-radius: 1rem;
   width: 100%;
