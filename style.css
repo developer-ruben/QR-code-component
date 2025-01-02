@@ -28,6 +28,7 @@
 
   --text-preset-2-size: 1.5rem;
   --text-preset-2-height: 1.4;
+  --text-preset-2-ls: 0.02rem;
 }
 
 /* RESET */
@@ -125,6 +126,7 @@ main {
   color: hsl(var(--clr-slate-500));
   font-size: var(--text-preset-2-size);
   line-height: var(--text-preset-2-height);
+  letter-spacing: var(--text-preset-2-ls);
 }
 
 /* ATTRIBUTION */
